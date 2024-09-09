@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gudu's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* color: black; */
+            background-color: black;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navbar Styles */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            padding-bottom: 50px;
+        }
+
+        #gudu img {
+            height: 80px;
+            width: auto;
+            border-radius: 50px;
+        }
+
+        #gudi {
+            display: flex;
+            gap: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            color: aliceblue;
+        }
+
+        #gudi h2 {
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        #gudi h2 {
+            margin: 0;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        #gudi h2:hover {
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        /* Main Section */
+        .lucky {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        #a {
+            max-width: 600px;
+        }
+
+        #aa,
+        img {
+            border-radius: 30px;
+        }
+
+        #b {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        #bb {
+            margin: 10px 0 0 0;
+            font-size: 48px;
+            color: #007BFF;
+        }
+
+        /* #aa img {
+            border-radius: 50%;
+        } */
+
+        /* Media Queries for Responsive Design */
+        /* @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .lucky {
+                flex-direction: column;
+            }
+
+            #gudi {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            #bb {
+                font-size: 36px;
+            }
+
+            #aa img {
+                height: 200px;
+                width: 200px;
+            }
+        } */
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cc {
+            color: antiquewhite;
+        }
+
+        span h2 {
+            display: inline-block;
+            margin-right: 20px;
+            /* Adjust the spacing between the items */
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #ja {
+            color: deeppink;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+            padding-bottom: 250px;
+
+        }
+
+        #c {
+            display: flex;
+            align-items: center;
+        }
+
+        #k:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        #d {
+            cursor: pointer;
+        }
+
+        #e {
+            color: aliceblue;
+            background-color: #333;
+            width: 380px;
+            text-align: left;
+            border-radius: 10px;
+            /* margin-left: 5px; */
+        }
+
+        #e:hover {
+            background-color: deeppink;
+        }
+
+        #e,
+        h2,
+        img,
+        p,
+        a {
+            padding-left: 10px;
+        }
+
+        .container4 {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px;
+
+        }
+
+        /* .container4:hover{
+            color: deeppink;
+        } */
+        #w {
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+        #e:hover {
+            transform: translateY(-10px);
+            /* Moves the element 10px up */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            /* Adds a shadow on hover */
+        }
+
+        .container3 {
+            color: aliceblue;
+            font-size: larger;
+            font-weight: 800;
+            padding-bottom: 10px;
+        }
+
+        .container5 {
+            color: aliceblue;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container6 {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+        }
+
+        /* #gh,img{
+            height: 300px;
+            width: 300px;
+        } */
+        #op {
+            height: 300px;
+            width: 300px;
+        }
+
+        .container7 {
+            height: 30px;
+            width: 120px;
+            border: 2px solid deeppink;
+            background-color: black;
+
+            border-radius: 5px;
+            margin-left: 50%;
+
+
+
+        }
+
+        .container7:hover {
+            background-color: deeppink
+        }
+
+        .container7 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        .container7 a {
+            text-decoration: none;
+            /* Removes underline */
+            color: antiquewhite;
+            /* Sets link color */
+        }
+
+
+        #lk {
+            height: 200px;
+            width: 300px;
+
+            background-color: deeppink;
+
+            border-radius: 5px;
+
+        }
+        #lk{
+            text-decoration: none;
+            /* Removes underline */
+       
+            /* Sets link color */
+        }
+
+        .container9 {
+            color: black;
+            background-color: white;
+            border-radius: 20px;
+            padding-left: 25px;
+            height: 500px;
+            padding-top: 25px;
+
+           
+        }
+
+
+
+        .container8 {
+            color: white;
+            font-size: larger;
+            font-weight: 800;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navbar -->
+        <div class="container">
+            <div id="gudu">
+                <img src="port.png" alt="Portfolio Logo">
+            </div>
+            <div id="gudi">
+                <h2>Home</h2>
+                <h2>About</h2>
+                <h2>Services</h2>
+                <h2>Projects</h2>
+                <h2>Internship</h2>
+                <h2>Contact</h2>
+            </div>
+        </div>
+
+        <!-- Main Section -->
+        <div class="lucky">
+            <div id="a">
+                <h3 id="b">Full Stack Developer</h3>
+                <h1 id="bb">Hi, I'm Hemanta Pradhan</h1>
+            </div>
+            <div id="aa">
+                <img src="vv.jpg" alt="Hemanta's Picture" height="300px" width="300px">
+            </div>
+        </div>
+
+
+        <div class="container1">
+            <div id="c"><img src="gudu.jpg" height="300px" width="300px"></div>
+
+            <div id="cc">
+                <h1>About Me</h1>
+
+                <p>Passionate MCA student at Centurion University adept in Java, MY SQL, HTML, CSS, JavaScript and<br>
+                    MERN stack. Experienced in dynamic application development and database management. Committed to
+                    <br>ongoing learning and innovation in software engineering.
+                </p>
+
+                <span>
+                    <div class="container2">
+                        <div id="d">
+                            <h2 id="k" onclick="toggleContent('skills')">Skills</h2>
+                            <div id="skills" class="content">
+                                <p id="ja">Full Stack Developer</p>
+                                <p>Html, Css, Js, MERN Stack</p>
+                                <p id="ja">Java</p>
+                                <p>J2SE, J2EE(Servlet)</p>
+                                <p id="ja">Database</p>
+                                <p>DBMS, MYSQL, MongoDB</p>
+                            </div>
+                        </div>
+                        <div id="d">
+                            <h2 id="k" onclick="toggleContent('experience')">Experience</h2>
+                            <div id="experience" class="content">
+                                <p id="ja">CUTM</p>
+                                <p>Student</p>
+                                <p id="ja">Utkal University</p>
+                                <p>Student</p>
+                                <p id="ja">Swadhin Residential College.</p>
+                                <p>Student</p>
+                                <p id="ja">Shree Jagannath High School.</p>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                        <div id="d">
+                            <h2 id="k" onclick="toggleContent('education')">Education</h2>
+                            <div id="education" class="content">
+                                <p id="ja">Post Graduate [2023-25] (9.0 CGPA)</p>
+                                <p>Centurion University, Bhubaneswar (Odisha).</p>
+                                <p id="ja">Graduate [2020-23] (9.0 CGPA)</p>
+                                <p>Utkal University, Bhubaneswar (Odisha).</p>
+                                <p id="ja">Plus Two [2018-20] (73%)</p>
+                                <p>Swadhin Residential College, Nimapada.</p>
+                                <p id="ja">Tenth [2018] (78%)</p>
+                                <p>Shree Jagannath High School, Puri.</p>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+
+            </div>
+        </div>
+
+        <div class="container3">
+            <h1>Services</h1>
+        </div>
+
+        <div class="container4">
+            <div id="e">
+                <img src="web.png">
+
+                <h2>Web Development</h2>
+                <p>Development Services I specialize in creating<br> websites using HTML, CSS, and JavaScript.
+                    Whether<br> you need a new site or updates to an existing one,<br> I've got you covered. Let's make
+                    your online<br> presence shine!</p>
+
+                <a id="w" href="https://www.codehelp.in/course/web-development-bootcamp">Learn More</a>
+            </div>
+
+            <div id="e">
+                <img src="java.png">
+
+                <h2>Java Development</h2>
+                <p>Development Services I specialize in creating<br> websites using HTML, CSS, and JavaScript.
+                    Whether<br> you need a new site or updates to an existing one,<br> I've got you covered. Let's make
+                    your online<br> presence shine!</p>
+
+                <a id="w" href="https://www.codehelp.in/course/web-development-bootcamp">Learn More</a>
+            </div>
+
+            <div id="e">
+                <img src="javascript.png">
+
+                <h2>Mern Development</h2>
+                <p>Development Services I specialize in creating<br> websites using HTML, CSS, and JavaScript.
+                    Whether<br> you need a new site or updates to an existing one,<br> I've got you covered. Let's make
+                    your online<br> presence shine!</p>
+
+                <a id="w" href="https://www.codehelp.in/course/web-development-bootcamp">Learn More</a>
+            </div>
+        </div>
+
+        <div class="container5">
+            <h1>My Projects</h1>
+        </div>
+
+        <div class="container6">
+            <div id="gh">
+                <img id=op src="india.png">
+                <h3 id="overlap-text">Historical Places India</h3>
+                <p id="overlap-text">India is a beautiful place<br>in india there are differnt people<br> and religions
+                    are lived</p>
+
+
+            </div>
+            <div id="gh">
+                <img id=op src="on;line shop.png">
+                <h3 id="overlap-text">Historical Places India</h3>
+                <p id="overlap-text">India is a beautiful place<br>in india there are differnt people<br> and religions
+                    are lived</p>
+
+
+            </div>
+            <div id="gh">
+                <img id=op src="contact.png">
+                <h3 id="overlap-text">Historical Places India</h3>
+                <p id="overlap-text">India is a beautiful place<br>in india there are differnt people<br> and religions
+                    are lived</p>
+
+
+            </div>
+            <div id="gh">
+                <img id=op src="portfolio.png">
+                <h3 id="overlap-text">Historical Places India</h3>
+                <p id="overlap-text">India is a beautiful place<br>in india there are differnt people<br> and religions
+                    are lived</p>
+
+
+            </div>
+
+        </div>
+
+        <div class="container7">
+            <a href="https://github.com/hemantapxy">See More</a>
+        </div>
+
+        <div class="container8">
+            <h1>My Internships</h1>
+        </div>
+        <div class="container9">
+            <h2>Web Development Internship</h2>
+            <p>organisations:Teechnook Institute</p>
+            <p>Description: During this internship, I gained hands-on experience in web development using HTML, CSS, and
+                JavaScript, React, Node js, Express Js, MongoDB. I worked <br>on various projects, including building
+                responsive websites, implementing dynamic features.</p>
+            <p>Duration: Aug - Oct (2023)</p>
+            <h1>Minor Project: Historical Places in India</h1>
+            <p>Description: This project involved creating a website showcasing historical places in India. I utilized
+                HTML, CSS, and JavaScript to design the website and provide<br> interactive features for users to
+                explore different historical sites across the country.</p>
+            <h1>Major Project: CRUD Operation API</h1>
+            <p>Description: Created a student management system using MERN stack. Implemented functionalities for
+                adding, deleting, updating, and removing student records, optimizing <br>administrative tasks in
+                educational settings.</p>
+
+            <a id="lk" href="https://github.com/hemantapxy">course completions certificate</a> <a id="lk"
+                href="https://github.com/hemantapxy">internship completions certificate</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
